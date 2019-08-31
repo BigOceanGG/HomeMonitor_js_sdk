@@ -1,0 +1,33 @@
+{
+  "private": true,
+  "name": "homemonitor-js--sdk",
+  "version": "1.0.0",
+  "license": "MIT",
+  "dependencies": {
+    "axlsign": "^1.0.0",
+    "babel-polyfill": "^6.26.0",
+    "base-58": "0.0.1",
+    "bignumber.js": "^7.2.1",
+    "blake2b": "^2.1.3",
+    "crypto-js": "^3.1.9-1",
+    "identicon.js": "^2.3.2",
+    "js-sha3": "^0.8.0",
+    "node-fetch": "^2.6.0",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/node": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-flow": "^6.23.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "flow-bin": "^0.92.1"
+  },
+  "scripts": {
+    "clean": "rm -rf libs",
+    "build": "babel --source-maps -d libs SDK Test",
+    "watch": "babel --watch --source-maps -d libs SDK Test"
+  }
+}
