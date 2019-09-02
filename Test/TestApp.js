@@ -1,6 +1,6 @@
 const Application = require('../libs/Application');
 
-const nodeAddress = "http://172.16.2.51:2500";
+const nodeAddress = "http://127.0.0.1:2500";
 
 async function findAppInfo(app) {
     const result = await app.findAppInfo("1");
